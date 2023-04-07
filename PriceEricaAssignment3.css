@@ -1,0 +1,194 @@
+header {
+	display: flex;
+	background: url("jeremythomas.jpg");
+	border-radius: 1%;
+	background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;
+	height: 400%;
+	margin: 1%;
+	overflow: auto;
+}
+
+nav {
+	background-color: #a2a3a2;
+	border-radius: 7%;
+	width: 15%;
+	margin: 1%;
+	padding: 1%;
+	text-align: center;
+	position: relative;
+	right: -80%;
+	overflow: auto;
+}
+ul {
+  border: 1px solid #555;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+li a {
+  display: block;
+  width: 20%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} 
+
+body {
+  background-color: #f7e6da;
+  margin: 5%;
+  
+}
+/*#topborder {
+	border-style: solid;
+	border-color: black;
+	position: absolute;
+	top: 70%;
+
+}*/
+#topborders {
+	border-style: solid;
+	border-color: black;
+	position: absolute;
+	top: 160%;
+	width: 90%;
+	margin: 1%;
+}
+#sect {
+	text-align: center;
+	border-radius: 7%;
+	padding: 1%;
+	background-color: #a2a3a2;
+	position: absolute;
+	top: 50%;
+	margin: 1%;
+    width: 25%;
+	overflow: auto;
+}
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+
+article {
+	background-color: #a2a3a2;
+	display: inline-block;
+	border-radius: 7%;
+	padding: 1%;
+	margin: 5%;
+	overflow: auto;
+	position: absolute;
+	top: 70%;
+	right: 0%;
+}
+#intro {
+	color: black;
+	text-decoration: underline;
+}
+#two {
+	color: black;
+	text-decoration: underline;
+}
+#three {
+	color: black;
+	text-decoration: underline;
+}
+#four {
+	color: black;
+	text-decoration: underline;
+}
+
+#aside {
+	border-radius: 7%;
+	border-width: 2px;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #a2a3a2;
+	position: absolute;
+	top: 165%;
+	left: 10%;
+	overflow: auto;
+	text-align: center;
+	margin: 1%;
+    width: 80%;
+    padding: 1%;
+}
+/*.vl {
+  border-right: 6px solid orange;
+  height: 600px;
+  position: absolute;
+  top: 180%;
+  left: 45%;
+  bottom: -1250px;
+  overflow: auto;
+  margin: 2px;
+  padding: 5px;
+}*/
+
+
+#tips  {
+	border-radius: 7%;
+	background-color: #a2a3a2;
+	position: absolute;
+    display: inline-block;
+	right: 10%;
+	top: 250%;
+	overflow: auto;
+	text-align: center;
+	margin: 1%;
+	width: 50%;
+    padding: 1%;
+}
+
+/*There is a resize option for user interface to resize the audio
+box content*/
+.audio {
+	border-radius: 7%;
+	background-color: #a2a3a2;
+	position: absolute;
+    display: inline-block;
+	right: 65%;
+	top: 260%;
+	overflow: auto;
+	text-align: center;
+	margin: 1%;
+    width: 30%;
+    padding: 1%;	
+	resize: both;
+}
+a {
+	color: purple;
+}
+
+a:hover {
+	color: blue;
+}
+
+h6 {
+	color: black;
+}
+footer {
+	background-color: #777;
+	border-radius: 7%;
+    padding: 1%;
+	margin: 1%;
+    text-align: center;
+    color: white;
+	width: 90%;
+	overflow: auto;
+	position: absolute;
+	top: 360%;
+	right: 2%;
+	font-size: large;
+}
+

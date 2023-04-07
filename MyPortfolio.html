@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>My Portfolio</title>
+<meta author="Erica Price" />
+<link rel="stylesheet" href="./CSS/MyPortfolioStyle.css"/>
+<!-- <script>
+function myNav() {
+  document.getElementById("dropNav").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.buttondrop')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script> -->
+
+</head>
+<header>ABOUT ME
+</header>
+<div class="dropdownmenu">
+<button onclick="myNav()" class="buttondrop">Menu</button>
+<div id="dropNav" class="dropdown-content">
+<a href="./Layout.html">Home</a>
+<a href="./MyPortfolio.html" target="_self">About Me</a>
+<a href="./Contact.html">Contact</a>
+</div>
+</div>
+<body>
+<div><h2 id="ME2">Erica Price</h2></div>
+<div><p id="jbtitle">Junior Web Developer</p></div>
+<!--<div class="cont2">
+<div><p id="cntitle"><b>Contact:</b></p></div>
+<div><p id="cnt"><strong>Email:</strong> EPrice000@gmail.com <br /> <br /> <strong>Telephone:</strong>(404)###-#### <br /></p></div></div>-->
+<img src="./CSS/ME2.jpg">
+<br />
+<hr>
+<p id="myLocation">Current Location</p>
+<button onclick="getLocation()">My Location</button>
+<div id="map">
+
+</div>
+<script>
+var location=document.getElementById("myLocation");
+function getLocation() {
+ if (navigator.geolocation) {
+ navigator.geolocation.getCurrentPosition(showPosition, showError);
+ }
+ else {
+ location.innerHTML-"Geolocation is not supported by this browser.";
+ }
+}
+</script>
+</body>
+
+<footer>
+<ol>
+<div id="ftcn"><li>Contact:</li><br /></div>
+<div id><li id="eml"><a href="mailto:" id="mil" onmouseover="link()"> Email:</strong> EPrice000@gmail.com</a></li></div>
+<div><li id="tl"><a href="telephone:" id="tel" onmouseover="link2()">Telephone:</strong>(404)###-####</a></li></div>
+<a href="">LinkedIN</a>
+
+</ol>
+</footer>
+
+</html>

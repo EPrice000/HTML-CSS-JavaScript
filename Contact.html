@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+<head>
+<title>My Portfolio Contact Page</title>
+<link rel="stylesheet" type="text/css" href="./CSS/Portfolio.css"/>
+</head>
+<nav>
+<a href="./AHTML/About.html">Back to Portfolio</a>
+</nav>
+<header>
+</header>
+
+<div>
+</div>
+<!--setting the iframe window-->
+<!--<iframe src="../MyProjects/html-handbook.pdf" id="mypdf"
+frameborder="0" style="border:0;" width="300" height="300">
+</iframe>-->
+
+<!--form 1 datalist which shows predefined options that sort and complete themselves as a user types into the filed -->
+<form onsubmit="printPDF()" autocomplete="on" autofocus>
+<fieldset>
+<legend>Pick a language you would like to learn.</legend>
+The links shared are not own nor created by me. The author of this material is by Flavio Copes.<a href="https://flaviocopes.com/">Please Click this link to subscribe to Flavio Copes! Learn to Code!</a><br><br> 
+<a href="../MyProjects/html-handbook.pdf" id="mypdf">HTML</a><br>
+<a href="../MyProjects/html-handbook.pdf" id="mypdf">CSS</a><br>
+<a href="../MyProjects/html-handbook.pdf" id="mypdf">JavaScript</a>
+<datalist id="typeoflanguage">
+
+<option value="HTML" id="HTML">
+<option value="CSS">
+<option value="JavaScript">
+</datalist>
+</input>
+
+</fieldset>
+</form>
+<!--end of form 1-->
+<!--form 2 Personal information-->
+<form onsubmit="showName()" id="allfields">
+<fieldset>
+<legend>Personal Information</legend>
+<!--Date: <input type="text" pattern="\d{1,2}/\d{1,2}/\d{4}"><br><br>-->
+Date of Birth: <input type="date" name"dob" value=""id="doB" autofocus="on"></input><br>
+First Name: <input type="search" id="fname" value="" placeholder="First Name" required></input>
+Last Name: <input type="search" id="lname" value="" placeholder="Last name"required></input><br>
+Email: <input type="email" id="emal" value="" placeholder="Email Address"required></input><br>
+Message:<br>
+<textarea rows="25" cols="50">Please enter your message here.</textarea><br>
+</fieldset>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</form>
+<script>
+//the showName() function is retrieving the values entered in the form above.
+function showName(userName) {
+var mydoB = document.getElementById("doB").value;
+var userName = document.getElementById("fname").value;
+var lastName = document.getElementById("lname").value;
+var emailAdd = document.getElementById("emal").value;
+document.open();
+document.write("<h1>Thank You! Your Date of Birth has been recorded as: " + mydoB + "and your first name is: " +   userName + " " + "and your last name is" + " " + lastName + " " + "and your email adress is: " + emailAdd);
+/*var text = "Thank You" + userName;
+document.write(text);*/
+document.close();
+}
+//this creates a window within a window to view PDF via the iframe
+/*function printPDF() {
+var myPDF = document.getElementById("mypdf");
+myPDF.contentWindow.focus();
+myPDF.contentWindow.print();
+}
+}
+*/
+function printPDF() {
+var myPDF = document.getElementById("mypdf");
+print(myPDF);
+}
+</script>
+<footer>
+</footer>
+</html>
